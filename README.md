@@ -172,7 +172,7 @@ board.boardInitialize()
 - `positicePlayer`: pitch값이 1인 플레이어를 의미합니다
 - `negativePlayer`: pitch값이 -1인 플레이어를 의미합니다
 ---
-### Board.getBoard
+### Board.getBoard 
 ```python
 import Kchess12
 positicePlayer = Player(1)
@@ -181,7 +181,8 @@ board = Board(positicePlayer, negativePlayer)
 board.boardInitialize()
 print(board.getBoard())
 ```
-보드를 가져옵니다. 빈 공간은 0으로, 빈공간이 아니라면 Piece 객체가 들어있습니다.
+
+- 보드를 가져옵니다. 빈 공간은 0으로, 빈공간이 아니라면 Piece 객체가 들어있습니다.
 ---
 ### Board.getSquare
 ```python
