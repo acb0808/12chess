@@ -65,7 +65,7 @@ Player(pitch)
 기물에 관련한 클래스입니다. 각 기물에 대한 상속을 받는 클래스입니다.
 
 
-### Player.setPos
+### Piece.setPos
 ```python
 import Kchess12
 p = Piece()
@@ -79,7 +79,7 @@ p.setPos(pos)
 
 - `pos`: 기물이 있는 위치를 지정합니다.
 ---
-### Player.getAbleMove
+piece.getAbleMove
 ```python
 import Kchess12
 p = Piece()
@@ -95,7 +95,7 @@ p.getAbleMove(x,y)
 - `x`: 기물의 이동이 가능한 칸의 x좌표의 상대값을 의미합니다
 - `y`: 기물의 이동이 가능한 칸의 y좌표의 상대값을 의미합니다
 ---
-### Player.goMove
+### Piece.goMove
 ```python
 import Kchess12
 p = Piece()
@@ -109,11 +109,11 @@ p.goMove(Move)
 
 - `move`: 기물의 이동에 대한 정보입니다.
 ---
-### Player.catched
+### Piece.catched
 ```python
 import Kchess12
 p = Piece()
-p.goMove(attacker)
+p.catched(attacker)
 ```
 기물이 잡혔을 때 호출 되야하는 함수입니다. 
 옵션은 아래를 참고. 
@@ -126,8 +126,7 @@ p.goMove(attacker)
 
 ---
 ### Board
-게임판에 대한 클래스입니다. 기본적인 게임을 다루는 클래스입니다.
-
+게임판에 대한 클래스입니다. 기본적인 게임을 다루는 클래스입니다
 ### Board.\_\_init\_\_
 보드를 생성합니다.
 옵션은 아래를 참고.
